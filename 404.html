@@ -8,8 +8,8 @@
   </head>
   <body onload="redirect()">
 	This page is permanently moved to narrowpathministries.net. This page will automatically redirect. If not please click link below. <br/>
-	<a href=window.location.href.replace("thekkel.com", "narrowpathministries.net")>window.location.href.replace("thekkel.com", "narrowpathministries.net")</a> 
-	<script>
+	<script> 
+	  document.write("<a href='" + window.location.href.replace("thekkel.com", "narrowpathministries.net") + "'>" + window.location.href.replace("thekkel.com", "narrowpathministries.net") + "</a>");
 	  function redirect() {
 		setTimeout(function(){ 
 				window.location.replace(window.location.href.replace("thekkel.com", "narrowpathministries.net"));
